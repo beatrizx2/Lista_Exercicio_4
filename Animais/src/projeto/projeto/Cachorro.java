@@ -1,6 +1,6 @@
 package projeto;
 
-public class Cachorro extends AnimalAB {
+public class Cachorro extends AnimalAB{
 
 	@Override
 	public void getComer(double comida){
