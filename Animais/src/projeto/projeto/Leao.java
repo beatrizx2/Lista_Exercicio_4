@@ -1,25 +1,22 @@
 package projeto;
 
 public class Leao extends AnimalAB{
-    @Override
-	public void getComer(double comida){
-		this.comida+=comida;
+
+	@Override
+    public void comer(double comida) {
+        this.comida = comida;  
+        System.out.println("O leao comeu " + comida + " unidades de comida.");
     }
 
     @Override
-    public void getMoverse(double distancia){
-        this.distancia+=distancia;
+    public void moverse(double distancia) {
+        this.distancia = distancia;  
+        System.out.println("O leao se moveu " + distancia + " metros.");
     }
 
     @Override
-    public void getDormir(int horasD) {
-        this.horasD+=horasD;
-    }   
-    // Método main para teste
-    public static void main(String[] args) {
-        Leao leao = new Leao();
-        leao.getComer(5);
-        leao.getMoverse(10);
-        leao.getDormir(8);
+    public void dormir(int horasD) {
+        this.horasD = horasD;  
+        System.out.println("O leao dormiu por " + horasD + " horas.");
     }
 }

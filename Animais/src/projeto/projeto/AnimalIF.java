@@ -1,7 +1,7 @@
 package projeto;
 
 public interface AnimalIF {
-	public void getComer(double comida);
-	public void getMoverse(double distancia);
-	public void getDormir(int horasD);
+	public void comer(double comida);
+	public void moverse(double distancia);
+	public void dormir(int horasD);
 }
