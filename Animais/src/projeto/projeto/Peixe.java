@@ -1,6 +1,10 @@
 package projeto;
 
 public class Peixe extends AnimalMarinhoAB {
+    
+    public Peixe(String nome, int idade, String habitat, double altura, double peso) {
+        super(nome, "Peixe", idade, habitat, 0, altura, peso);
+    }
 
     @Override
     public void comer(double comida) {

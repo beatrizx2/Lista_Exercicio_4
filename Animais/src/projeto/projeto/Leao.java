@@ -1,8 +1,12 @@
 package projeto;
 
-public class Leao extends AnimalAB{
+public class Leao extends AnimalTerrestreAB{
 
-	@Override
+	public Leao(String nome, int idade, String habitat, double altura, double peso) {
+        super(nome, "Leao", idade, habitat, altura, peso);
+    }
+
+    @Override
     public void comer(double comida) {
         this.comida = comida;  
         System.out.println("O leao comeu " + comida + " unidades de comida.");
